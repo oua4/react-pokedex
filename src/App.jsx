@@ -1,4 +1,5 @@
 import React from "react"
+import InfoContainer from "./assets/components/InfoContainer/InfoContainer"
 
 function App() {
   const [pokemonData, setPokemonData] = React.useState({})
@@ -14,7 +15,7 @@ function App() {
     <div>
       <h2>Le numéro est {count}</h2>
       <button onClick={() => setCount(prev => prev + 1)}>Afficher le prochain Pokémon</button>
-      <div><b>Name:</b> {pokemonData.name}</div>
+      <InfoContainer data={pokemonData} />
     </div>
   )
 }
