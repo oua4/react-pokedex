@@ -1,4 +1,4 @@
-import Sprite from "./Sprite/Sprite";
+import Sprite from "../Sprite/Sprite";
 
 function InfoContainer({ data }) {
     return (
