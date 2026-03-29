@@ -1,3 +1,5 @@
+import Sprite from "./Sprite/Sprite";
+
 function InfoContainer({ data }) {
     return (
         <>
@@ -6,6 +8,7 @@ function InfoContainer({ data }) {
             <div><b>ID: </b> {data.id}</div>
             <div><b>Taille: </b> {data.height / 10 + " m"}</div>
             <div><b>Poids: </b> {data.weight / 10 + " kg"}</div>
+            <Sprite pokemonId={data.id}></Sprite>
         </>);
 }
 
